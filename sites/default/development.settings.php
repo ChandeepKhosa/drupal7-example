@@ -29,3 +29,6 @@ $conf['preprocess_js'] = 0;
 if(getenv('LAGOON_PRODUCTION_URL')){
   $conf['stage_file_proxy_origin'] = getenv('LAGOON_PRODUCTION_URL');
 }
+
+// Disable Google Analytics from sending data for non-production environments
+$conf['googleanalytics_account'] = '';
